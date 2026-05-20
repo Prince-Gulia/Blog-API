@@ -1,0 +1,26 @@
+{
+  "name": "blog-api",
+  "version": "1.0.0",
+  "description": "Learning More about Database and relations while practicing more REST APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node index.js",
+    "dev" : "nodemon index.js"
+  },
+  "keywords": [
+    "GOAT"
+  ],
+  "author": "Prince Gulia",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
