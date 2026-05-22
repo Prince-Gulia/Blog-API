@@ -3,6 +3,7 @@ const pool = require('./config/db');
 require('dotenv').config();
 const authRoutes = require('./routes/authRoutes');
 const postRoutes = require('./routes/postRoutes');
+const commentRoutes = require('./routes/commentRoutes');
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.get('/',(req,res)=>{
 
 app.use('/auth', authRoutes);
 app.use('/posts', postRoutes);
+app.use('/posts', commentRoutes);
 
 const PORT = process.env.PORT || 3000;
 
